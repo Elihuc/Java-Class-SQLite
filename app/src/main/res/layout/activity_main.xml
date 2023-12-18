@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/teal_700"
+    tools:context=".MainActivity">
+
+        <TextView
+            android:id="@+id/title_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/white"
+            android:text="Add New Student"
+            android:textSize="24sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <EditText
+            android:id="@+id/student_name_et"
+            android:background="@color/white"
+            android:padding="10sp"
+            android:layout_marginTop="12sp"
+            app:layout_constraintTop_toBottomOf="@id/title_tv"
+            android:hint="Student name"
+            android:layout_width="match_parent"
+            android:inputType="text"
+            android:layout_height="50sp" />
+
+        <EditText
+            android:id="@+id/student_email_et"
+            android:background="@color/white"
+            android:padding="10sp"
+            android:layout_marginTop="12sp"
+            app:layout_constraintTop_toBottomOf="@id/student_name_et"
+            android:hint="Student email"
+            android:inputType="textEmailAddress"
+            android:layout_width="match_parent"
+            android:layout_height="50sp" />
+
+        <EditText
+            android:id="@+id/student_phone_et"
+            android:background="@color/white"
+            android:padding="10sp"
+            android:layout_marginTop="12sp"
+            app:layout_constraintTop_toBottomOf="@id/student_email_et"
+            android:hint="Student phone"
+            android:inputType="phone"
+            android:layout_width="match_parent"
+            android:layout_height="50sp" />
+
+        <EditText
+            android:id="@+id/student_avatar_et"
+            android:background="@color/white"
+            android:padding="10sp"
+            android:layout_marginTop="12sp"
+            app:layout_constraintTop_toBottomOf="@id/student_phone_et"
+            android:hint="Student avatar"
+            android:inputType="text"
+            android:layout_width="match_parent"
+            android:layout_height="50sp" />
+
+        <Button
+            android:id="@+id/submit"
+            android:text="add student"
+            android:backgroundTint="@color/teal_200"
+            android:layout_marginTop="30sp"
+            app:layout_constraintTop_toBottomOf="@id/student_avatar_et"
+            android:layout_width="match_parent"
+            android:layout_height="60sp" />
+
+        <Button
+            android:id="@+id/gotolist"
+            android:text="students list"
+            android:backgroundTint="@android:color/holo_red_light"
+            app:layout_constraintBottom_toBottomOf="parent"
+            android:layout_width="match_parent"
+            android:layout_height="60sp" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
